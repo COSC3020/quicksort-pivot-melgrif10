@@ -19,4 +19,8 @@ quantitatively reason with them.
 
 Add your answer to this markdown file. [This
 page](https://docs.github.com/en/get-started/writing-on-github/working-with-advanced-formatting/writing-mathematical-expressions)
-might help with the notation for mathematical expressions.
+might help with the notation for mathematical expressions. 
+
+The median of three method selects an element from the begining, middle, and end of the array and selects the median value of those three as the pivot. Choosing the leftmost element of the array just selects the first element as the pivot. In order to pick a good pivot we want the value to be in the middle n/2 of elements. A good pivot will create two partitions with a maximum size of 3n/4 and has $\varTheta (nlog(n))$ comparisons. Ensuring that the partitions are realativley balanced makes it less likely for the algorithm to run into the worst-case scenario. Now that a good pivot has been defined analysis on the median of three vs the first element of selecting a pivot can begin. 
+
+ The median of three chooses elements from the begining, middle, and end of the array and chooses the median of the three as a pivot. This method has a larger sample size for choosing a pivot which gives you more of a chance of choosing a good pivot. The elements at the begining and middle of the array might not have a value that lies in the middle n/2 of the array but the end value could. And when you compare the multiple values from the array with one another and choose the median it increases your chances of getting a value that creates partitons with a max size of 3n/4. When you just choose the first element there is less of a probability of choosing a good pivot because you get stuck with whatever value that may be. 
